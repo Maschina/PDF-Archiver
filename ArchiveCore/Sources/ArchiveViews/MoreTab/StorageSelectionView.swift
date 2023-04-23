@@ -6,10 +6,7 @@
 //
 
 import SwiftUI
-import SwiftUILib_DocumentPicker
-#if os(iOS)
-import MobileCoreServices
-#endif
+import UniformTypeIdentifiers
 
 struct StorageSelectionView: View {
 
@@ -40,13 +37,20 @@ struct StorageSelectionView: View {
                 Spacer(minLength: 8)
                 #endif
             }
-			.documentPicker(
-				isPresented: $showDocumentPicker,
-				documentTypes: [kUTTypeFolder as String /* "public.folder" */ ], onDocumentsPicked: { urls in
-					guard let url = urls.first else { return }
-					urlDocumentPicker = url
+			.fileImporter(isPresented: $showDocumentPicker, allowedContentTypes: [UTType.folder], onCompletion: { result in
+				switch result {
+					case .success(let url):
+						// Securely access the URL to save a bookmark
+						guard url.startAccessingSecurityScopedResource() else {
+							// Handle the failure here.
+							return
+						}
+						urlDocumentPicker = url
+
+					case .failure(let error):
+						print("Download picker error: \(error)")
 				}
-			)
+			})
         }
     }
 }

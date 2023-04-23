@@ -48,7 +48,6 @@
 		34E7DB10250189D400E94352 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34E7DB12250189D400E94352 /* Localizable.strings */; };
 		34FAB21A25A3B79B0088A306 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 34FAB21925A3B79B0088A306 /* Sentry */; };
 		34FB40712548839B00A415DA /* ArchiveSharedConstants in Frameworks */ = {isa = PBXBuildFile; productRef = 34FB40702548839A00A415DA /* ArchiveSharedConstants */; };
-		66E3CA8229F1E1EE00680806 /* SwiftUILib.DocumentPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 66E3CA8129F1E1EE00680806 /* SwiftUILib.DocumentPicker */; };
 		A3EAEE6E276A9B9F0091AF70 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = A3EAEE6D276A9B9F0091AF70 /* Logging */; };
 		A3EAEE70276A9C5B0091AF70 /* ArchiveSharedConstants in Frameworks */ = {isa = PBXBuildFile; productRef = A3EAEE6F276A9C5B0091AF70 /* ArchiveSharedConstants */; };
 		A3EAEE72276A9C6D0091AF70 /* ArchiveBackend in Frameworks */ = {isa = PBXBuildFile; productRef = A3EAEE71276A9C6D0091AF70 /* ArchiveBackend */; };
@@ -171,7 +170,6 @@
 				A3EAEE76276A9C6D0091AF70 /* InAppPurchases in Frameworks */,
 				A3EAEE6E276A9B9F0091AF70 /* Logging in Frameworks */,
 				3416B28724A92D4200D5F4E0 /* Sentry in Frameworks */,
-				66E3CA8229F1E1EE00680806 /* SwiftUILib.DocumentPicker in Frameworks */,
 				34A5CF8224A93A3C002409EF /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,7 +400,6 @@
 				A3EAEE71276A9C6D0091AF70 /* ArchiveBackend */,
 				A3EAEE73276A9C6D0091AF70 /* ArchiveViews */,
 				A3EAEE75276A9C6D0091AF70 /* InAppPurchases */,
-				66E3CA8129F1E1EE00680806 /* SwiftUILib.DocumentPicker */,
 			);
 			productName = iOS;
 			productReference = 3489D71B24A3C53E0035E64F /* PDFArchiver.app */;
@@ -935,7 +932,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iOS/PDFArchiver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 58;
+				CURRENT_PROJECT_VERSION = 59;
 				DEVELOPMENT_TEAM = PF8C99TXS7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -944,7 +941,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.0;
+				MARKETING_VERSION = 3.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.PDFArchiveViewer;
 				PRODUCT_NAME = PDFArchiver;
 				SDKROOT = iphoneos;
@@ -962,7 +959,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iOS/PDFArchiver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 58;
+				CURRENT_PROJECT_VERSION = 59;
 				DEVELOPMENT_TEAM = PF8C99TXS7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -971,7 +968,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.0;
+				MARKETING_VERSION = 3.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.PDFArchiveViewer;
 				PRODUCT_NAME = PDFArchiver;
 				SDKROOT = iphoneos;
@@ -991,7 +988,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 58;
+				CURRENT_PROJECT_VERSION = 59;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = PF8C99TXS7;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1003,7 +1000,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 3.8.0;
+				MARKETING_VERSION = 3.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.PDFArchiveViewer;
 				PRODUCT_NAME = PDFArchiver;
 				SDKROOT = macosx;
@@ -1020,7 +1017,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 58;
+				CURRENT_PROJECT_VERSION = 59;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = PF8C99TXS7;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1032,7 +1029,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 3.8.0;
+				MARKETING_VERSION = 3.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.PDFArchiveViewer;
 				PRODUCT_NAME = PDFArchiver;
 				SDKROOT = macosx;
@@ -1137,7 +1134,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 58;
+				CURRENT_PROJECT_VERSION = 59;
 				DEVELOPMENT_TEAM = PF8C99TXS7;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1146,7 +1143,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.0;
+				MARKETING_VERSION = 3.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.PDFArchiveViewer.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1164,7 +1161,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 58;
+				CURRENT_PROJECT_VERSION = 59;
 				DEVELOPMENT_TEAM = PF8C99TXS7;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1173,7 +1170,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.0;
+				MARKETING_VERSION = 3.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.PDFArchiveViewer.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1353,11 +1350,6 @@
 		34FB40702548839A00A415DA /* ArchiveSharedConstants */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ArchiveSharedConstants;
-		};
-		66E3CA8129F1E1EE00680806 /* SwiftUILib.DocumentPicker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 66E3CA8029F1E1EE00680806 /* XCRemoteSwiftPackageReference "document-picker" */;
-			productName = SwiftUILib.DocumentPicker;
 		};
 		A3EAEE6D276A9B9F0091AF70 /* Logging */ = {
 			isa = XCSwiftPackageProductDependency;
